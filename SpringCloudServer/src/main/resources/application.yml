@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8700/eureka
+
+
+spring:
+  application:
+    name: spring-cloud-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/emanuelezicola/SpringCloudTutorial.git/config-repo
+
