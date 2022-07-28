@@ -10,8 +10,7 @@ eureka:
 spring:
   application:
     name: spring-cloud-server
-  profiles:
-    active:
+
   cloud:
     config:
       server:
@@ -20,4 +19,5 @@ spring:
           default-label: master
           skip-ssl-validation: true
           search-paths:
-            - config-repo
+            - config-repo/spring-cloud-server
+            - config-repo/student-service
